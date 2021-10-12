@@ -1,0 +1,175 @@
+
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+        
+        <div style="color: gray;">
+        <button mat-button class="menu-button"onclick="document.location='summary'">
+            <mat-icon>contact_mail</mat-icon>&nbsp;&nbsp;
+            <span>Summary</span>
+        </button>
+</div>&nbsp;&nbsp;
+<div class="active">
+<div style="color: gray;">
+        <button mat-button class="menu-button">
+            <mat-icon>edit</mat-icon>&nbsp;&nbsp;
+            <span>Edit</span>
+        </button>
+    </div>
+    
+</div>&nbsp;&nbsp;
+    <div style="color: gray;"onclick="document.location='marketting'">
+        <button mat-button class="menu-button">
+            <mat-icon>search</mat-icon>&nbsp;&nbsp;
+            <span>Marketting</span>
+           
+        </button>
+    </div>&nbsp;&nbsp;
+        <mat-divider></mat-divider>
+        <div style="color: gray;">
+        <button mat-button class="menu-button"onclick="document.location='comments'">
+            <mat-icon >description</mat-icon>&nbsp;&nbsp;
+            <span>Comments</span>&nbsp;&nbsp;
+            <span class="elementnotify">         5</span>
+        </button>
+        </div>&nbsp;&nbsp;
+        <div style="color: gray;">
+        <button mat-button class="menu-button"onclick="document.location='email'">
+            <mat-icon>email</mat-icon>&nbsp;&nbsp;
+            <span>Email/SMS</span>&nbsp;&nbsp;
+            <span class="elementnotify"> 2</span>
+        
+        </button>
+        </div>&nbsp;&nbsp;
+        <div style="color: gray;">
+    
+        <button mat-button class="menu-button"onclick="document.location='agenda'">
+            <mat-icon >event</mat-icon>&nbsp;&nbsp;
+            <span>Agenda</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="elementnotify"> 5</span>
+        </button>
+        </div>&nbsp;&nbsp;
+        <div style="color: gray;">
+        <button mat-button class="menu-button"onclick="document.location='callnotes'">
+            <mat-icon>perm_phone_msg</mat-icon>&nbsp;&nbsp;
+            <span>Call/Notes</span>&nbsp;&nbsp;&nbsp;
+            <span class="elementnotify">         3</span>
+        </button>
+</div>&nbsp;&nbsp;
+<br><br>
+
+
+    </mat-sidenav><br>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <mat-sidenav-content style="background-color: rgb(31, 31, 34);" >
+       <div class="content ">
+        <div class="row">
+
+            <li style="margin-right: 800px
+          ;">
+          <div class="block"><mat-label>Edit</mat-label>
+            <div style="margin-top: -35px;">
+             <mat-form-field class="selectdiv" style="margin-left: 40px;">
+           <select style="color: rgb(9, 9, 172);" matNativeControl required>
+                <option value="Auto Filling Option">Auto Filling Option</option>
+                <option value="Auto Filling Option1">Auto Filling Option1</option>
+                <option value="Auto Filling Option2">Auto Filling Option2</option>
+              
+              </select>
+            </mat-form-field>
+        </div>
+            </div>
+          </li>
+          
+          <div class="block"><mat-icon>save</mat-icon><span>Save</span>
+          
+          </div>
+          <div class="block"><mat-icon></mat-icon>
+            <span>Cancel</span>&nbsp;&nbsp;&nbsp;
+            </div>
+          
+          
+          <div class="block"><mat-icon>share</mat-icon>&nbsp;&nbsp;
+            <span></span>&nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+                  
+                
+            <mat-divider></mat-divider>
+            <div class="active" style="color: white;" >
+                <button  mat-button (click)="toggle()" class="bt" > <span>Personal Details</span>&nbsp;&nbsp;&nbsp; <span class="elementnotify">         10/19</span>
+                {{buttonName}}
+              </button>
+            
+              <button  mat-button (click)="toggle1()" class="bt" > <span>Current Employment</span>&nbsp;&nbsp;&nbsp; <span class="elementnotify">         19/19</span>
+                {{buttonName1}}
+              </button>
+              <button style="color: white;" mat-button>Preference and Account Mgmt</button><span class="elementnotify">         15/15</span>
+            </div>
+            
+            <mat-divider></mat-divider>
+            <ng-container *ngIf="show">
+                <div class="cardy">
+                  <mat-card class="candi">
+                  <p style="color: gray;">Profile Image</p>
+                  <img alt="logo" src="assets/man.jpg" style="width: 80px;" > 
+                  <p style="color: honeydew;">User img_jpg</p> 
+                </mat-card>
+                
+                </div>
+                <div class="compo">
+                  <mat-form-field floatLabel="auto" hideRequiredMarker appearance ="outline">
+                  <mat-label style="color: gray;">Salutation</mat-label>
+                  
+                  <mat-select>
+                    <mat-option value="Mr" style="color: grey;">Mr</mat-option>
+                    <mat-option value="Mrs">Mrs</mat-option>
+                   
+                  </mat-select>
+                </mat-form-field><br>
+                <mat-form-field floatLabel="auto" hideRequiredMarker appearance ="outline">
+                  <mat-label style="color: gray">First Name</mat-label>
+                  <input matInput style="color: honeydew;" required/>
+                  
+                </mat-form-field> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <mat-form-field type="text"  floatLabel="auto" hideRequiredMarker appearance ="outline">
+                  <mat-label style="color: gray">Last Name</mat-label>
+                  <input  matInput style="color: honeydew;"  required/>
+                  
+                </mat-form-field><br>
+                <mat-form-field floatLabel="auto" hideRequiredMarker appearance ="outline">
+                  <mat-label style="color: gray">Date of Birth</mat-label>
+                  <input matInput [matDatepicker]="myDatePicker">
+                  <mat-datepicker-toggle style="color: white;" [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+                  <mat-datepicker #myDatePicker></mat-datepicker>
+                </mat-form-field>&nbsp;&nbsp;
+                
+                <mat-form-field floatLabel="auto" hideRequiredMarker appearance ="outline" >
+                  <mat-label style="color: gray">Age</mat-label>
+                  <input matInput style="color: honeydew;" required/>
+                  </mat-form-field>
+                </div>
+                </ng-container>&nbsp;&nbsp;&nbsp;
+                <ng-container *ngIf="show1">
+                    <!--<div style="margin: 0 auto;text-align: left;">-->
+                      <mat-form-field floatLabel="auto" hideRequiredMarker appearance ="outline">
+                        <mat-label style="color: gray">Start Date</mat-label>
+                        <input matInput [matDatepicker]="myDatePicker">
+                        <mat-datepicker-toggle style="color: white;" [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+                        <mat-datepicker #myDatePicker></mat-datepicker>
+                      </mat-form-field>&nbsp;&nbsp;
+                      
+                     <mat-form-field floatLabel="auto" hideRequiredMarker appearance ="outline">
+                        <mat-label style="color: gray">End Date</mat-label>
+                        <input matInput [matDatepicker]="myDatePicker1">
+                        <mat-datepicker-toggle style="color: white;" [for]="myDatePicker1" matSuffix></mat-datepicker-toggle>
+                        <mat-datepicker #myDatePicker1></mat-datepicker>
+                      </mat-form-field>&nbsp;&nbsp;
+                      <br>
+                      
+                      
+                    </ng-container>
+       </div> 
+      
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

@@ -1,0 +1,218 @@
+mat-sidenav {
+  margin: 0px;
+  width: 230px;
+  border-right: none;
+  background-color: #1f1f22;
+  color: orange;
+  border: radius 20px;
+  padding: 11px;
+  text-align: left;
+  margin-top: -1px;
+  width: fit-content;
+  justify-content: left;
+}
+
+.content {
+  height: calc(100vh - 98px);
+  margin: 10px;
+  margin-left: 10px;
+  justify-content: left;
+  align-items: center;
+  color: lightgray;
+  border-radius: 10px;
+}
+
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+}
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+.menu-button mat-icon {
+  margin-right: 8px;
+}
+
+.menu-button:hover {
+  color: greenyellow;
+}
+
+mat-icon:hover {
+  color: greenyellow;
+}
+
+mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.one {
+  display: inline-block;
+  margin-left: 950px;
+}
+
+.two {
+  display: inline-block;
+  margin-left: 850px;
+}
+
+.mat-tab-group {
+  margin-bottom: 48px;
+  color: gray;
+}
+
+.stepper {
+  background-color: #1f1f22;
+}
+
+div.active {
+  position: relative;
+}
+div.active::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  height: 2px;
+  width: 100%;
+}
+div.active .menu-button {
+  color: greenyellow;
+}
+div.active mat-icon {
+  color: yellowgreen;
+}
+
+.elementnotify {
+  background-color: #2b992b;
+  padding: 3px;
+  border-radius: 5px;
+  color: white;
+  align-self: right;
+  margin-right: 2.5rem;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #1f1f22 !important;
+  background-color: #0f0f20;
+}
+
+.imgbox {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border: solid 1px #000;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #1f1f22;
+}
+
+.candi {
+  max-width: 90px;
+  background-color: #0f0f20;
+  border-radius: 3px;
+  max-height: 130px;
+  margin-top: 100px;
+  border-radius: 5px;
+}
+
+mat-form-field:hover {
+  color: greenyellow;
+}
+
+.compo {
+  margin-top: -170px;
+  margin-left: 150px;
+}
+
+.cardy {
+  margin-top: 50px;
+}
+
+.mat-button:hover {
+  border-bottom-color: greenyellow;
+}
+
+.elementnotify {
+  background-color: #7bb12b;
+  padding: 3px;
+  border-radius: 5px;
+  color: white;
+  align-self: right;
+  margin-right: 2.5rem;
+}
+
+.mat-button:hover {
+  color: greenyellow;
+}
+
+div.btn {
+  position: relative;
+}
+div.btn::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  height: 2px;
+  width: 100%;
+}
+div.btn .bt:hover {
+  color: greenyellow;
+}
+div.btn mat-button {
+  color: greenyellow;
+}
+div.btn mat-icon {
+  color: yellowgreen;
+}
+
+.bt:hover {
+  color: greenyellow;
+}
+
+.bt:hover {
+  color: white;
+  border-bottom-color: yellowgreen;
+  border-bottom-style: dashed;
+}
+
+.bt:hover {
+  color: yellowgreen;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: greenyellow !important;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.block {
+  width: 100px;
+  margin-top: -40px;
+}
+
+.block:hover {
+  width: 100px;
+  color: yellowgreen;
+}
+
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
